@@ -1,9 +1,11 @@
-import "./styles.css";
+let numero = Number(prompt("Ingrese un número"));
+let contador = 0;
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>`;
+while (numero !== 0) {
+  if (numero % 2 === 0) {
+    console.log("El número es par");
+    break;
+  } else {
+    console.log("El número es impar");
+  }
+}
